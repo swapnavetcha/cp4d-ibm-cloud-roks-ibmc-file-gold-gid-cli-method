@@ -77,9 +77,9 @@ If you are installing other applications in the cluster, or more Cloud Pak for D
 Log in to the IBM Cloud command line interface and run the code snippet modifyVol.sh 
 
 ```
-- Download modifyVol.sh 
-- chmod a+x modifyVol.sh
-- ./modifyVol.sh
+1)Download modifyVol.sh 
+2)chmod a+x modifyVol.sh
+3)./modifyVol.sh
 ```
 
 2)Run the preinstallation script
@@ -89,9 +89,9 @@ If you are not a cluster administrator,  Copy the script and share it with your 
 Otherwise,  Run to run the following preinstallation script in the project that you specified in Configure your installation environment. It has the same effect regardless of the number of times it is run.
 
 ```
-- Download Preinstallation_script.sh
-- chmod a+x Preinstallation_script.sh
-- sh Preinstallation_script.sh
+1)Download Preinstallation_script.sh
+2)chmod a+x Preinstallation_script.sh
+3)sh Preinstallation_script.sh
 ```
 
 **NOTE:** The script will fail if you dont have necessary privileges like cluster admin and privilege to modify the storage (classic infrastructure permissions)
@@ -146,11 +146,12 @@ On the Linux or Mac OS workstation, download the appropriate file from cpd-cli G
 
 [](url)https://github.com/IBM/cpd-cli
 
-```
-Edition 	                  TAR file
-Enterprise Edition 	    cpd-cli-architecture-EE-version.tgz
-Standard Edition 	    cpd-cli-architecture-SE-version.tgz
-```
+
+Edition 	           |             TAR file
+------------------  |   -------------------------------------
+Enterprise Edition 	|    cpd-cli-architecture-EE-version.tgz
+Standard Edition 	   |cpd-cli-architecture-SE-version.tgz
+
 
 Download installer
 ```
