@@ -244,6 +244,9 @@ PATCH_NAME="patch_name"
 
 ./cpd-cli patch -a lite -n swapve29-cp4d-test --patch-name $PATCH_NAME --transfer-image-to=$(oc registry info)/zen -r ./repo.yaml --target-registry-username=$(oc whoami) --target-registry-password=$(oc whoami -t) --insecure-skip-tls-verify --cluster-pull-prefix=image-registry.openshift-image-registry.svc:5000/zen --ask-push-registry-credentials --action transfer --dry-run --insecure-skip-tls-verify
 ```
+11)Check the CP4D and assembly versions
+
+```./cpd-cli status -n <namespace>```
 
 **NOTE:**
 Either cluster admin can install or the project admin can install the control pane
