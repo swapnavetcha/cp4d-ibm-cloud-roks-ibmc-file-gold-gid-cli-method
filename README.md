@@ -19,6 +19,9 @@ Each cluster must meet a set of minimum requirements: 3 nodes with 16 cores, 64G
 
 1)Provisioned single zone Redhat OpenShift Container cluster v 4.5 installed on IBM cloud
 
+<img src="Screenshot 2021-03-01 at 9.05.12 AM.png" width="100">
+
+
 2)Redhat Openshift Container Webconsole
 
 3)Cluster Admin Role
