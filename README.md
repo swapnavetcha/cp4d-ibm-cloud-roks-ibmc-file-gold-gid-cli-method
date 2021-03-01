@@ -15,7 +15,7 @@ Each cluster must meet a set of minimum requirements: 3 nodes with 16 cores, 64G
 - Installation
 - Post-installation steps
 
-[create an anchor](#Pre-requisites:)
+**Pre-requisites:**
 
 1)Provisioned single zone Redhat OpenShift Container cluster v 4.5 installed on IBM cloud
 
@@ -94,7 +94,10 @@ Otherwise,  Run to run the following preinstallation script in the project that 
 3)sh Preinstallation_script.sh
 ```
 
-**NOTE:** The script will fail if you dont have necessary privileges like cluster admin and privilege to modify the storage (classic infrastructure permissions)
+```diff
+- NOTE: 
+```
+-  The script will fail if you dont have necessary privileges like cluster admin and privilege to modify the storage (classic infrastructure permissions)
 
 3)Create a docker image pull secret
 
