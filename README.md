@@ -89,9 +89,9 @@ If you are not a cluster administrator,  Copy the script and share it with your 
 Otherwise,  Run to run the following preinstallation script in the project that you specified in Configure your installation environment. It has the same effect regardless of the number of times it is run.
 
 ```
-i)Download Preinstallation_script.sh
-ii)chmod a+x Preinstallation_script.sh
-iii)sh Preinstallation_script.sh
+- Download Preinstallation_script.sh
+- chmod a+x Preinstallation_script.sh
+- sh Preinstallation_script.sh
 ```
 
 **NOTE:** The script will fail if you dont have necessary privileges like cluster admin and privilege to modify the storage (classic infrastructure permissions)
@@ -148,13 +148,13 @@ On the Linux or Mac OS workstation, download the appropriate file from cpd-cli G
 
 ```
 Edition 	                  TAR file
-Enterprise Edition 	 cpd-cli-architecture-EE-version.tgz
+Enterprise Edition 	      cpd-cli-architecture-EE-version.tgz
 Standard Edition 	    cpd-cli-architecture-SE-version.tgz
 ```
 
 Download installer
 ```
-wget https://github.com/IBM/cpd-cli/releases/download/v3.5.2/cpd-cli-linux-EE-3.5.2.tgz[](url) -P /tmp/
+wget https://github.com/IBM/cpd-cli/releases/download/v3.5.2/cpd-cli-linux-EE-3.5.2.tgz -P /tmp/
 mkdir -p /cpd
 tar xvf /tmp/cpd-cli-linux-EE-3.5.2.tgz -C /cpd
 rm -f /tmp/cpd-cli-linux-EE-3.5.2.tgz
