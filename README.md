@@ -19,7 +19,11 @@ Each cluster must meet a set of minimum requirements: 3 nodes with 16 cores, 64G
 
 1)Provisioned single zone Redhat OpenShift Container cluster v 4.5 installed on IBM cloud
 
+<img src="images/Screenshot-rh-cluster.png" width="200">
+
 2)Redhat Openshift Container Webconsole
+
+<img src="images/Screenshot-openshift-webui.png" width="200">
 
 3)Cluster Admin Role
 
@@ -216,6 +220,14 @@ NAMESPACE=swapve29-cp4d-test
 --namespace <namespace>
 ```
 At the end of the installation, an URL will be printed which is a Cloud Pak for Data web console URL. You can verify it by logging in with admin/password
+
+**CP4D Login Console**
+
+<img src="images/Screenshot-cp4d-login.png" width="200">
+
+**CP4D Web Console**
+
+<img src="images/Screensho-cp4d-console.png" width="200">
 
 9)List available patches
 ```
