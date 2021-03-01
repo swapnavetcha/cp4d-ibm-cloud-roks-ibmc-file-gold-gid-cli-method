@@ -148,7 +148,7 @@ On the Linux or Mac OS workstation, download the appropriate file from cpd-cli G
 
 ```
 Edition 	                  TAR file
-Enterprise Edition 	     cpd-cli-architecture-EE-version.tgz
+Enterprise Edition 	    cpd-cli-architecture-EE-version.tgz
 Standard Edition 	    cpd-cli-architecture-SE-version.tgz
 ```
 
