@@ -149,12 +149,12 @@ On the Linux or Mac OS workstation, download the appropriate file from cpd-cli G
 ```
 Edition 	                  TAR file
 Enterprise Edition 	 cpd-cli-architecture-EE-version.tgz
-Standard Edition 	   cpd-cli-architecture-SE-version.tgz
+Standard Edition 	    cpd-cli-architecture-SE-version.tgz
 ```
 
 Download installer
 ```
-wget https://github.com/IBM/cpd-cli/releases/download/v3.5.2/cpd-cli-linux-EE-3.5.2.tgz -P /tmp/
+wget https://github.com/IBM/cpd-cli/releases/download/v3.5.2/cpd-cli-linux-EE-3.5.2.tgz[](url) -P /tmp/
 mkdir -p /cpd
 tar xvf /tmp/cpd-cli-linux-EE-3.5.2.tgz -C /cpd
 rm -f /tmp/cpd-cli-linux-EE-3.5.2.tgz
@@ -227,15 +227,15 @@ cd /cpd/cpd-cli-linux-EE-3.5.2
 Find the latest patch applicable to the Lite assembly and apply
 ```
 PATCH_NAME="patch_name"
+
 ./cpd-cli patch -a lite -n swapve29-cp4d-test --patch-name $PATCH_NAME --transfer-image-to=$(oc registry info)/zen -r ./repo.yaml --target-registry-username=$(oc whoami) --target-registry-password=$(oc whoami -t) --insecure-skip-tls-verify --cluster-pull-prefix=image-registry.openshift-image-registry.svc:5000/zen --ask-push-registry-credentials --action transfer --dry-run --insecure-skip-tls-verify
 ```
 
 **NOTE:**
 Either cluster admin can install or the project admin can install the control pane
 
+**Run the following command to grant cpd-admin-role to the project administration user:**
 ```
-Run the following command to grant cpd-admin-role to the project administration user:
-
 oc adm policy add-role-to-user cpd-admin-role <project_admin> — role-namespace=<project-name> -n <project-name>
 
 - project-admin : The user name of the project administrator who will install the Cloud Pak for Data control plane.
