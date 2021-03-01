@@ -94,8 +94,9 @@ Otherwise,  Run to run the following preinstallation script in the project that 
 
 ```
 1)Download Preinstallation_script.sh
-2)chmod a+x Preinstallation_script.sh
-3)sh Preinstallation_script.sh
+2)Edit the values JOB_NAMESPACE and JOB_CLUSTER_NAME with your namespace and cluster name
+3)chmod a+x Preinstallation_script.sh
+4)sh Preinstallation_script.sh
 ```
 
 **NOTE:** The script will fail if you dont have necessary privileges like cluster admin and privilege to modify the storage (classic infrastructure permissions)
