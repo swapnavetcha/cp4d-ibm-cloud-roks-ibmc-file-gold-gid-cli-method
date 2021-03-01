@@ -112,8 +112,8 @@ oc create secret docker-registry cpregistrysecret --docker-server=cp.icr.io/cp/c
   
  4)Set the kernel parameters 
  
- i)Download the deployment file setkernelparams.yaml
- ii)Execute the deployment file setkernelparams.yaml
+ - Download the deployment file setkernelparams.yaml
+ - Execute the deployment file setkernelparams.yaml
  
  `oc apply -f setkernelparams.yaml -n kube-system`
  
@@ -123,9 +123,8 @@ oc create secret docker-registry cpregistrysecret --docker-server=cp.icr.io/cp/c
  
  6)The File storage mounted as nfs v4. By default no root squash is not enabled.
  
- 
- i)Down the deployment file norootsquash.yaml
- ii)Execute the deployment file norootsquash.yaml
+ - Down the deployment file norootsquash.yaml
+ - Execute the deployment file norootsquash.yaml
  
  `oc apply -f norootsquash.yaml -n kube-system`
  
