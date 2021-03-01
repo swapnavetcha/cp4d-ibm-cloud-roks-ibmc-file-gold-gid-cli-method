@@ -1,8 +1,8 @@
 # cp4d-bigsql-ibm-cloud-roks
 
-# Installing Cloud Pak for Data Cluster on IBM Cloud (ROKS) Openshift 4.5 Custom
+# Installing Cloud Pak for Data Cluster 3.5.2 on IBM Cloud (ROKS) Openshift 4.5 Custom
 
-## Installation of CP4D on IBM Managed Openshift Cluster with storage class ibmc-file-gold-gid (Non-airgapped method ie internet connected systems)
+## Installation of CP4D 3.5.2 on IBM Managed Openshift Cluster with storage class ibmc-file-gold-gid (Non-airgapped method ie internet connected systems)
 
 ### Minimum required of Redhat Openshift cluster :
 Each cluster must meet a set of minimum requirements: 3 nodes with 16 cores, 64GB memory, and 25GB disk per node.
