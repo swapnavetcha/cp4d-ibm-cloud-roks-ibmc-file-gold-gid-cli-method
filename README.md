@@ -94,10 +94,7 @@ Otherwise,  Run to run the following preinstallation script in the project that 
 3)sh Preinstallation_script.sh
 ```
 
-```diff
-- NOTE: 
-```
--  The script will fail if you dont have necessary privileges like cluster admin and privilege to modify the storage (classic infrastructure permissions)
+**NOTE:** The script will fail if you dont have necessary privileges like cluster admin and privilege to modify the storage (classic infrastructure permissions)
 
 3)Create a docker image pull secret
 
