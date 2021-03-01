@@ -45,9 +45,9 @@ Changes applied
 
 _The script makes the following changes to your Red Hat OpenShift cluster:_
 
-    Increases the size of the Image registry volume to 200 GB. This change incurs cost to your account.
-    Creates the security context constraints that are required for Cloud Pak for Data.
-    Grants the security context constraints to the service accounts that are required for Cloud Pak for Data.
+- Increases the size of the Image registry volume to 200 GB. This change incurs cost to your account.
+- Creates the security context constraints that are required for Cloud Pak for Data.
+- Grants the security context constraints to the service accounts that are required for Cloud Pak for Data.
 
 _Image registry permissions_
 
