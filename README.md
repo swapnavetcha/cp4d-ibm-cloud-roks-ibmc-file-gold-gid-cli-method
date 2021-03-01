@@ -33,9 +33,9 @@ Each cluster must meet a set of minimum requirements: 3 nodes with 16 cores, 64G
 
 8)Get the entitlement key for your entitled software library.
    
-    i)Log in to [Container software library](https://myibm.ibm.com/products-services/containerlibrary) on My IBM with the IBM ID and password that are associated with the entitled software.
-    ii)On the Get entitlement key tab, select Copy key to copy the entitlement key to the clipboard.
-    iii)Save the API key in a text file.
+ - Log in to [Container software library](https://myibm.ibm.com/products-services/containerlibrary) on My IBM with the IBM ID and password that are associated with the entitled software.
+ - On the Get entitlement key tab, select Copy key to copy the entitlement key to the clipboard.
+ - Save the API key in a text file.
 
 **Pre-instalaltion:**
 
