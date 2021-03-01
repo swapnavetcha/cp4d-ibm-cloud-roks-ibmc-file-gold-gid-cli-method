@@ -1,4 +1,4 @@
-# cp4d-bigsql-ibm-cloud-roks
+
 
 # Installing Cloud Pak for Data Cluster 3.5.2 on IBM Cloud (ROKS) Openshift 4.5 Custom
 
