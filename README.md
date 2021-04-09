@@ -225,6 +225,8 @@ Where
 - --storageclass = Storage_class_name 
 - --transfer-image-to = Registry_location 
 - --cluster-pull-prefix = Registry_from_cluster 
+- --target-registry-username=$(oc whoami) = login user
+- --target-registry-password=$(oc whoami -t) = login user token
    
 7)Run the following command to install Control Plane
 ```
