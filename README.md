@@ -197,18 +197,38 @@ PULL_PREFIX="image-registry.openshift-image-registry.svc:5000"
 STORAGE_CLASS=ibmc-file-gold-gid
 NAMESPACE=swapve29-cp4d-test
 ```
+or
+
+```
+export CPD_REGISTRY=cp.icr.io/cp/cpd
+export CPD_REGISTRY_USER=cp
+export CPD_REGISTRY_PASSWORD=<your_Entitlement key>
+export NAMESPACE=<project-name>
+```
+
 
 4)See what changes need to be made to the cluster, by running the appropriate cpd adm command for your environment:
 
-`./cpd-cli adm --assembly lite --repo ./repo.yaml --namespace $NAMESPACE `
+`./cpd-cli adm --assembly lite --arch x86_64 --repo ./repo.yaml --namespace $NAMESPACE `
 
 5)Apply changes to your cluster which you saw in above step
 
-`./cpd-cli adm --assembly lite --repo ./repo.yaml --namespace $NAMESPACE --apply --accept-all-licenses`
+`./cpd-cli adm --assembly lite --arch x86_64 --repo ./repo.yaml --namespace $NAMESPACE --apply --accept-all-licenses`
 
-6)Run the following command to install Control Plane
+6)Run the dry run command
 ```
-./cpd-cli install --assembly lite -n $NAMESPACE -c $STORAGE_CLASS --transfer-image-to=$REGISTRY/$NAMESPACE -r./repo.yaml --target-registry-username=$(oc whoami) --target-registry-password=$(oc whoami -t) --insecure-skip-tls-verify --cluster-pull-prefix=image-registry.openshift-image-registry.svc:5000/$NAMESPACE --latest-dependency --accept-all-licenses
+./cpd-cli install --assembly lite  --arch x86_64 -n $NAMESPACE -c $STORAGE_CLASS --transfer-image-to=$REGISTRY/$NAMESPACE -r./repo.yaml --target-registry-username=$(oc whoami) --target-registry-password=$(oc whoami -t) --insecure-skip-tls-verify --cluster-pull-prefix=image-registry.openshift-image-registry.svc:5000/$NAMESPACE --latest-dependency --accept-all-licenses --insecure-skip-tls-verify --dry-run 
+```
+Where 
+--arch = Cluster_architecture 
+--namespace = <Project-name> 
+--storageclass = Storage_class_name 
+--transfer-image-to = Registry_location 
+--cluster-pull-prefix = Registry_from_cluster 
+   
+7)Run the following command to install Control Plane
+```
+./cpd-cli install --assembly lite --arch x86_64 -n $NAMESPACE -c $STORAGE_CLASS --transfer-image-to=$REGISTRY/$NAMESPACE -r./repo.yaml --target-registry-username=$(oc whoami) --target-registry-password=$(oc whoami -t) --insecure-skip-tls-verify --cluster-pull-prefix=image-registry.openshift-image-registry.svc:5000/$NAMESPACE --latest-dependency --accept-all-licenses --insecure-skip-tls-verify
 ```
 7)watch the installation process
 
